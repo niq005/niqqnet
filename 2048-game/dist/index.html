@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>CodePen - 2048 game</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.4">
+  <style type="text/css">
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1">&lt;html&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1">&lt;div class="container"&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="heading"&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h1 class="title"&gt;NQ48&lt;/h1&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="score-container"&gt;0&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 18.0px"><span class="s1"><span class="Apple-converted-space">  </span></span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="topnav"&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">  </span>&lt;a class="active" href="#home"&gt;Home&lt;/a&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">  </span>&lt;a href="#news"&gt;News&lt;/a&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">  </span>&lt;a href="#contact"&gt;Contact&lt;/a&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">  </span>&lt;a href="#about"&gt;About&lt;/a&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1">&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 18.0px"><span class="s1"><span class="Apple-converted-space">  </span></span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">  </span>&lt;p class="game-intro"&gt;Join the numbers and get to the &lt;strong&gt;NQ48 tile&lt;/strong&gt;&lt;/p&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><br>
+</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="game-container"&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="game-message"&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;/p&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="lower"&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a class="retry-button"&gt;Try again&lt;/a&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><br>
+</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="grid-container"&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="grid-row"&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="grid-cell"&gt;&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="grid-cell"&gt;&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="grid-cell"&gt;&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="grid-cell"&gt;&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="grid-row"&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="grid-cell"&gt;&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="grid-cell"&gt;&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="grid-cell"&gt;&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="grid-cell"&gt;&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="grid-row"&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="grid-cell"&gt;&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="grid-cell"&gt;&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="grid-cell"&gt;&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="grid-cell"&gt;&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="grid-row"&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="grid-cell"&gt;&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="grid-cell"&gt;&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="grid-cell"&gt;&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="grid-cell"&gt;&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><br>
+</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="tile-container"&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><br>
+</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><br>
+</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">  </span>&lt;p class="game-explanation"&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">    </span>&lt;strong class="important"&gt;How to play:&lt;/strong&gt; Use your &lt;strong&gt;arrow keys&lt;/strong&gt; to move the tiles. When two tiles with the same number touch, they &lt;strong&gt;merge into one&lt;/strong&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/p&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">  </span>&lt;hr&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">  </span>&lt;p&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">  </span>Property &lt;a href="https://en.wikipedia.org/wiki/Goat" target="_blank"&gt;NIQQA.NET&lt;/a&gt; conceptually similar to &lt;a href="https://i.kym-cdn.com/entries/icons/facebook/000/036/244/twoniggas.jpg" target="_blank"&gt;2048 by Gabriele Cirulli.&lt;/a&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/p&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1">&lt;/div&gt;</span></h1>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1">&lt;/html&gt;</span></h1>
+</body>
+</html>
